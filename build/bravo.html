@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chris Holmes | UI/UX Designer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.min.css" />
+</head>
+
+<body>
+  <section id="header-proj">
+    <div class="wrapper-main">
+        <nav>
+          <div class="hamburger">
+            <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+              </svg>
+            </a>
+          </span>
+            <div id="side-menu" class="side-nav">
+              <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+              <a href="#header">HOME</a>
+              <a href="#work">WORK</a>
+              <a href="#about">ABOUT</a>
+              <a href="#contact">CONTACT</a>
+            </div>
+          </div>
+        <ul class="work-nav">
+          <li><a href="/">HOME</a></li>
+          <li><a href="/#work">WORK</a></li>
+          <li><a href="/#about">ABOUT</a></li>
+          <li><a href="/#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section id="project-banner">
+    <div class="wrapper-proj001">
+      <div class="proj-bravo-banner"></div>
+      <div class="proj-intro">
+          <h3 class="h3-proj">What Is Bravo News?</h3>
+          <div class="clearfix">
+          <h4 class="h4-proj"><img src="/assets/img/bravo_mockup.png">This mobile application allows users to see snippets of news article about Bravo reality shows. The app starts with a guided tour of how to set up daily reminders to check the news and moves on to showcase the articles in a clean and concise manner. </h4>
+        <div class="clearfix"></div>
+        </div>
+       <hr>
+      </div>
+      <div class="proj-overview">
+      <div class="left-side">
+        <h3 class="h3-proj-overview">Target Audience</h3>
+          <ul>
+            <li class="h4-proj-overview">Female</li>
+            <li class="h4-proj-overview">Ages 24-38</li>
+            <li class="h4-proj-overview">Invested In Current Events</li>
+          </ul>
+          </ul>
+        <h3 class="h3-proj-overview">Influential Idea</h3>
+        <h4 class="h4-proj-overview">Stay update and receive reminders for the latest celebrity news.</h4>
+      </div>
+      <div class="right-side">
+        <h3 class="h3-proj-overview">Role</h3>
+        <h4 class="h4-proj-overview">UX Research & Design Execution</h4>
+
+        <h3 class="h3-proj-overview">Category</h3>
+        <h4 class="h4-proj-overview">Mobile UI Design</h4>
+      </div>
+      </div>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="ux">
+        <h3 class="h3-proj">Research</h3>
+        <h4 class="h4-proj">User Personas</h4>
+        <img src="/assets/img/wrangle_up.jpg">
+      </div>
+      <hr>
+      <div class="proj-mission">
+      <div class="left-side">
+        <h3 class="h3-proj-overview">Challenge</h3>
+        <h4 class="h4-proj-overview">Design an app that engages readers in an efficient way. The app should be clean and not be overly distracting while still maintaining brand identity. The information that readers seek out
+        should be easily digestible and the ability to set reminders should be intuitive. The app should deliver what it promises without being overly complicated. </h4>
+      </div>
+      <div class="right-side">
+        <h3 class="h3-proj-overview">Solution</h3>
+        <h4 class="h4-proj-overview">Streamlined the design to include branded icons and a tutorial that allows readers to get to their favorite gossip in a timely manner. The news articles are laid out in such a manner that the newest source is at the top which makes
+        it easy for readers to feel like they are up-to-date and in-the-know. </h4>
+      </div>
+      </div>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="proj-process">
+        <h3 class="h3-proj">The Process</h3>
+        <h4 class="h4-proj">Sketches</h4>
+        <img src="/assets/img/w.jpg">
+        <h4 class="h4-proj">Color and Typeface</h4>
+        <img src="/assets/img/bravo_color.jpg">
+        <hr>
+        <h3 class="h3-proj">The App</h3>
+        <h4 class="h4-proj">Main Screens</h4>
+        <img src="/assets/img/bravo_app.png">
+        <hr>
+        <h3 class="h3-proj">Prototype</h3>
+        <div class="gif" id="gif"></div>
+      </div>
+      <hr>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrapper">
+      <h1>CONTACT</h1>
+      <div class="contactbox">
+        <h2 class="h2-first">EMAIL:</h2>
+        <h4>chrisholmesdesigns@gmail.com</h4>
+        <h2>PHONE:</h2>
+        <h4>858-386-8661</h4>
+        <h2>FIND ME HERE:</h2>
+        <a href="https://instagram.com/chrisholmesdesigns"><img src="/assets/img/instagram.png" class="socials1" alt="instagram icon"></a>
+        <a href="https://github.com/chrisholmesdesigns"><img src="/assets/img/github.png" class="socials2" alt="github icon"></a>
+        <a href="https://linkedin.com/in/chrisholmesdesigns"><img src="/assets/img/linkedin.png" class="socials3" alt="linkedin icon"></a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function openSlideMenu() {
+      document.getElementById('side-menu').style.width = "100%";
+    }
+
+    function closeSlideMenu() {
+      document.getElementById('side-menu').style.width = "0";
+    }
+  </script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

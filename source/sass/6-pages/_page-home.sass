@@ -1,0 +1,103 @@
+h1
+  color: $white
+  font-family: $fontMain
+  font-size: 1.8em
+  margin: 0 0 50px 0
+
+//HEADER
+#header
+  width: 100vw
+  height: 100vh
+  @media screen and (max-width: 647px)
+   height: 80vh
+.wrapper-main
+  width: 85%
+  max-width: 1100px
+  margin: 0 auto
+
+.logo img
+  width: 30%
+  position: absolute
+  top: 25%
+  left: 15%
+  @media screen and (max-width: 647px)
+   width: 70%
+   top: 20%
+   left: 17%
+
+.portrait img
+  width: auto
+  height: 70vh
+  overflow: hidden
+  position: absolute
+  top: 30%
+  right: 25%
+  @media screen and (max-width: 647px)
+    display: none
+
+.box-white
+  background-color: white
+  height: 100vh
+  width: 38%
+  position: absolute
+  top: 0%
+  right: 0%
+  @media screen and (max-width: 647px)
+   display: none
+
+.main-nav
+  position: absolute
+  text-align: right
+  top: 25%
+  right: 15%
+  font-family: $fontMain
+  li
+    list-style: none
+  a
+    color: $navy
+    display: block
+    padding: 0 0 30px 0
+    text-decoration: none
+    text-align: right
+    font-weight: 900
+    text-transform: uppercase
+    transition: all 0.2s ease
+  a:hover
+    color: $gold
+  @media screen and (max-width: 647px)
+   display: none
+.hamburger
+    display: none
+    overflow: hidden
+    @media screen and (max-width: 647px)
+     display: inline
+    .open-slide svg
+      margin: 5% 0
+    .side-nav
+      height: 100%
+      width: 0
+      position: fixed
+      z-index: 1
+      top: 0%
+      left: 0%
+      background-color: #ffffff
+      overflow-x: hidden
+      padding-top: 60px
+      transition: 0.7s
+      a
+        padding: 50px 0 20px 0
+        text-align: center
+        text-decoration: none
+        font-size: 22px
+        color: $navy
+        display: block
+        transition: 0.4s
+        font-family: $fontMain
+      a:hover
+        color: $gold
+      .btn-close
+        position: absolute
+        top: 0
+        right: 25px
+        font-size: 36px
+        margin-left: 70px

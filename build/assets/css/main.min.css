@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@font-face {
+  font-family: 'Futura';
+  src: url("../font/Futura.ttc"); }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize * */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -190,17 +194,13 @@ html {
   box-sizing: inherit; }
 
 body {
+  background-color: #243242;
   font-size: 14px;
   line-height: 1.6;
   font-size: 14px;
   color: black;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
-
-.wrapper {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto; }
 
 section {
   display: -webkit-box; }
@@ -246,7 +246,7 @@ a {
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: #F012BE; }
+    color: #243242; }
 
 ::selection {
   background: #FFF498; }
@@ -264,7 +264,7 @@ body {
   -webkit-tap-highlight-color: #FFF498; }
 
 .gigantic, .huge, .large, .bigger, .big,
-h1, h2, h3, h4, h5, h6 {
+h3, h5, h6 {
   color: #222;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
@@ -283,26 +283,12 @@ h1, h2, h3, h4, h5, h6 {
     .huge, h1 {
       font-size: 44px; } }
 
-.large, h2 {
-  font-size: 42px;
-  line-height: 1.14; }
-  @media only screen and (max-width: 680px) {
-    .large, h2 {
-      font-size: 32px; } }
-
 .bigger, h3 {
   font-size: 26px;
   line-height: 1.38; }
   @media only screen and (max-width: 680px) {
     .bigger, h3 {
       font-size: 22px; } }
-
-.big, h4 {
-  font-size: 22px;
-  line-height: 1.38; }
-  @media only screen and (max-width: 680px) {
-    .big, h4 {
-      font-size: 18px; } }
 
 .small, small {
   font-size: 10px;
@@ -326,6 +312,505 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+.proj-dailyui-banner {
+  background-color: #fff;
+  background-image: url("/assets/img/dailyui_banner.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px; }
+  @media screen and (min-width: 1446px) {
+    .proj-dailyui-banner {
+      height: 400px; } }
+
+.row > .column {
+  padding: 0 8px; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%; }
+  @media screen and (max-width: 640px) {
+    .column {
+      width: 50%; } }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black; }
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  height: auto;
+  max-width: 1200px; }
+  @media screen and (max-width: 640px) {
+    .modal-content {
+      width: 90%; } }
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 55px;
+  font-size: 65px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* Hide the slides by default */
+.mySlides {
+  display: none; }
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #111;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #b1862d; }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white; }
+
+img.demo {
+  opacity: 0.6; }
+
+.active,
+.demo:hover {
+  opacity: 1; }
+
+img.hover-shadow {
+  transition: 0.3s; }
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+#gif {
+  background-image: url("/assets/img/bravo_news.gif");
+  background-size: cover;
+  width: 400px;
+  height: 350px;
+  margin: 50px auto; }
+
+.proj-bravo-banner {
+  background-color: #fff;
+  background-image: url("/assets/img/bravo_banner.png");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px; }
+
+.proj-yelpcamp-banner {
+  background-color: #fff;
+  background-image: url("/assets/img/yelpcamp_banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px; }
+
+.ux .yp_ux {
+  width: 50%;
+  float: left; }
+
+.ux #h4p {
+  width: 50%;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 647px) {
+    .ux #h4p {
+      width: 100%; } }
+
+.proj-process .mainscreens_yp {
+  width: 48%;
+  border: 1px solid #000000;
+  height: auto; }
+  @media screen and (max-width: 647px) {
+    .proj-process .mainscreens_yp {
+      width: 100%; } }
+
+.proj-process .mainscreens2_yp {
+  width: 48%;
+  border: 1px solid #000000;
+  height: auto; }
+  @media screen and (max-width: 647px) {
+    .proj-process .mainscreens2_yp {
+      width: 100%; } }
+
+.proj-process #h4pp {
+  width: 100%;
+  margin-top: 40px; }
+  @media screen and (max-width: 647px) {
+    .proj-process #h4pp {
+      width: 100%; } }
+
+.proj-process .yp-process {
+  width: 50%;
+  margin: 30px 25% 80px 25%; }
+  @media screen and (max-width: 647px) {
+    .proj-process .yp-process {
+      width: 100%;
+      margin: 30px auto 80px auto; } }
+
+.proj-wrangle-banner {
+  background-color: #fff;
+  background-image: url("/assets/img/wrangle_banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px; }
+
+#contact {
+  margin: 250px auto 200px auto;
+  width: 80%; }
+
+.contactbox {
+  background-color: #fff;
+  height: 400px; }
+
+h2 {
+  color: #243242;
+  font-family: "Futura";
+  font-size: 1.3em;
+  padding: 0 0 0 15%; }
+
+.h2-first {
+  padding: 60px 0 0 15%; }
+
+h4 {
+  color: #243242;
+  font-family: "Roboto Slab";
+  font-size: 1em;
+  padding: 0 0 20px 15%;
+  margin: -10px 0 0 0; }
+
+.socials1 {
+  width: 30px;
+  margin: 0 10px 0 15%; }
+
+.socials2 {
+  width: 30px;
+  margin: 0 10px 0 0; }
+
+.socials3 {
+  width: 30px;
+  margin: 0 10px 0 0; }
+
+#about {
+  width: 100%;
+  margin: 10% auto; }
+
+.box-about {
+  position: relative; }
+
+.port-about img {
+  width: auto;
+  height: 70vh;
+  overflow: hidden;
+  position: absolute;
+  top: 185px;
+  left: 18%; }
+  @media screen and (max-width: 1038px) {
+    .port-about img {
+      left: 5%;
+      height: 55vh;
+      top: 288px; } }
+  @media screen and (max-width: 1038px) and (max-width: 640px) {
+    .port-about img {
+      left: 35%;
+      height: 35vh;
+      top: 88px; } }
+
+.wrapper {
+  width: 80%;
+  margin: auto; }
+  .wrapper .blue-h1 {
+    color: #243242;
+    margin: 50px 10%; }
+  .wrapper .design {
+    margin: 14% 20% 0 50%;
+    color: #fff;
+    font-family: "Roboto Slab"; }
+    @media screen and (max-width: 1038px) {
+      .wrapper .design {
+        margin: 24% 5% 0 50%; } }
+    @media screen and (max-width: 640px) {
+      .wrapper .design {
+        margin: 380px 10% 0 10%;
+        font-size: 1.4em; } }
+  .wrapper .hobbies {
+    margin: 3% 20% 0 50%;
+    color: #fff;
+    font-family: "Roboto Slab"; }
+    @media screen and (max-width: 1038px) {
+      .wrapper .hobbies {
+        margin: 0% 5% 0 50%; } }
+    @media screen and (max-width: 640px) {
+      .wrapper .hobbies {
+        margin: 2% 10% 0 10%;
+        font-size: 1.4em; } }
+
+.box-white-about {
+  background-color: white;
+  height: 720px;
+  width: 38%;
+  position: absolute;
+  top: 0%;
+  left: 0%; }
+  @media screen and (max-width: 640px) {
+    .box-white-about {
+      height: 380px;
+      width: 50%; } }
+
+#work {
+  width: 80%;
+  margin: 10% auto; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: auto; }
+
+.proj01 {
+  background-color: #fff;
+  background-image: url("/assets/img/yelpcamp.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin: 100px 0; }
+  @media screen and (max-width: 647px) {
+    .proj01 {
+      height: 250px; } }
+
+.box-gold-1 {
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  background-color: #b1862d;
+  width: 35%;
+  height: 120px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  @media screen and (max-width: 576px) {
+    .box-gold-1 {
+      width: 60%; } }
+  .box-gold-1 h3 {
+    color: white;
+    font-family: "Futura";
+    font-size: 1.6em;
+    margin: 10px 0 .8% 20px; }
+  .box-gold-1 h3:hover {
+    color: #243242; }
+  .box-gold-1 h5 {
+    color: white;
+    font-family: "Futura";
+    font-size: 1em;
+    font-style: bold;
+    margin: 0 0 3% 20px; }
+  .box-gold-1 h5:hover {
+    color: #243242; }
+  .box-gold-1 .work-h4 {
+    color: white;
+    font-family: "Roboto Slab";
+    font-size: .9em;
+    margin: 0 20px 2% 20px;
+    padding: 0; }
+  .box-gold-1 .work-h4:hover {
+    color: #243242; }
+
+.proj02 {
+  background-color: #fff;
+  background-image: url("/assets/img/wrangle.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin: 100px 0; }
+  @media screen and (max-width: 647px) {
+    .proj02 {
+      height: 250px; } }
+
+.box-gold-2 {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  background-color: #b1862d;
+  width: 35%;
+  height: 120px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  @media screen and (max-width: 576px) {
+    .box-gold-2 {
+      width: 60%; } }
+  .box-gold-2 h3 {
+    color: white;
+    font-family: "Futura";
+    font-size: 1.6em;
+    margin: 10px 0 .8% 20px; }
+  .box-gold-2 h3:hover {
+    color: #243242; }
+  .box-gold-2 h5 {
+    color: white;
+    font-family: "Futura";
+    font-size: 1em;
+    font-style: bold;
+    margin: 0 0 3% 20px; }
+  .box-gold-2 h5:hover {
+    color: #243242; }
+  .box-gold-2 .work-h4 {
+    color: white;
+    font-family: "Roboto Slab";
+    font-size: .9em;
+    margin: 0 20px 2% 20px;
+    padding: 0; }
+  .box-gold-2 .work-h4:hover {
+    color: #243242; }
+
+.proj03 {
+  background-color: #fff;
+  background-image: url("/assets/img/bravo.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin: 100px 0; }
+  @media screen and (max-width: 647px) {
+    .proj03 {
+      height: 250px; } }
+
+.box-gold-3 {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  background-color: #b1862d;
+  width: 35%;
+  height: 120px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  @media screen and (max-width: 576px) {
+    .box-gold-3 {
+      width: 60%; } }
+  .box-gold-3 h3 {
+    color: white;
+    font-family: "Futura";
+    font-size: 1.6em;
+    margin: 10px 0 .8% 20px; }
+  .box-gold-3 h3:hover {
+    color: #243242; }
+  .box-gold-3 h5 {
+    color: white;
+    font-family: "Futura";
+    font-size: 1em;
+    font-style: bold;
+    margin: 0 0 3% 20px; }
+  .box-gold-3 h5:hover {
+    color: #243242; }
+  .box-gold-3 .work-h4 {
+    color: white;
+    font-family: "Roboto Slab";
+    font-size: .9em;
+    margin: 0 20px 2% 20px;
+    padding: 0; }
+  .box-gold-3 .work-h4:hover {
+    color: #243242; }
+
+.proj04 {
+  background-color: #fff;
+  background-image: url("/assets/img/dailyui.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin: 100px 0; }
+  @media screen and (max-width: 647px) {
+    .proj04 {
+      height: 250px; } }
+
+.box-gold-4 {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  background-color: #b1862d;
+  width: 35%;
+  height: 120px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  @media screen and (max-width: 576px) {
+    .box-gold-4 {
+      width: 60%; } }
+  .box-gold-4 h3 {
+    color: white;
+    font-family: "Futura";
+    font-size: 1.6em;
+    margin: 10px 0 .8% 20px; }
+  .box-gold-4 h3:hover {
+    color: #243242; }
+  .box-gold-4 h5 {
+    color: white;
+    font-family: "Futura";
+    font-size: 1em;
+    font-style: bold;
+    margin: 0 0 3% 20px; }
+  .box-gold-4 h5:hover {
+    color: #243242; }
+  .box-gold-4 .work-h4 {
+    color: white;
+    font-family: "Roboto Slab";
+    font-size: .9em;
+    margin: 0 20px 2% 20px;
+    padding: 0; }
+  .box-gold-4 .work-h4:hover {
+    color: #243242; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -342,3 +827,225 @@ hr {
   top: 0;
   width: 100%;
   left: 0; }
+
+h1 {
+  color: #fff;
+  font-family: "Futura";
+  font-size: 1.8em;
+  margin: 0 0 50px 0; }
+
+#header {
+  width: 100vw;
+  height: 100vh; }
+  @media screen and (max-width: 647px) {
+    #header {
+      height: 80vh; } }
+
+.wrapper-main {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.logo img {
+  width: 30%;
+  position: absolute;
+  top: 25%;
+  left: 15%; }
+  @media screen and (max-width: 647px) {
+    .logo img {
+      width: 70%;
+      top: 20%;
+      left: 17%; } }
+
+.portrait img {
+  width: auto;
+  height: 70vh;
+  overflow: hidden;
+  position: absolute;
+  top: 30%;
+  right: 25%; }
+  @media screen and (max-width: 647px) {
+    .portrait img {
+      display: none; } }
+
+.box-white {
+  background-color: white;
+  height: 100vh;
+  width: 38%;
+  position: absolute;
+  top: 0%;
+  right: 0%; }
+  @media screen and (max-width: 647px) {
+    .box-white {
+      display: none; } }
+
+.main-nav {
+  position: absolute;
+  text-align: right;
+  top: 25%;
+  right: 15%;
+  font-family: "Futura"; }
+  .main-nav li {
+    list-style: none; }
+  .main-nav a {
+    color: #243242;
+    display: block;
+    padding: 0 0 30px 0;
+    text-decoration: none;
+    text-align: right;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: all 0.2s ease; }
+  .main-nav a:hover {
+    color: #b1862d; }
+  @media screen and (max-width: 647px) {
+    .main-nav {
+      display: none; } }
+
+.hamburger {
+  display: none;
+  overflow: hidden; }
+  @media screen and (max-width: 647px) {
+    .hamburger {
+      display: inline; } }
+  .hamburger .open-slide svg {
+    margin: 5% 0; }
+  .hamburger .side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s; }
+    .hamburger .side-nav a {
+      padding: 50px 0 20px 0;
+      text-align: center;
+      text-decoration: none;
+      font-size: 22px;
+      color: #243242;
+      display: block;
+      transition: 0.4s;
+      font-family: "Futura"; }
+    .hamburger .side-nav a:hover {
+      color: #b1862d; }
+    .hamburger .side-nav .btn-close {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 70px; }
+
+.work-nav {
+  position: relative;
+  text-align: center;
+  margin: 5% auto;
+  font-family: "Futura"; }
+  .work-nav li {
+    list-style: none;
+    display: inline-block; }
+  .work-nav a {
+    color: #fff;
+    padding: 0 60px 15px 0;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: all 0.2s ease; }
+  .work-nav a:hover {
+    color: #b1862d; }
+  @media screen and (max-width: 647px) {
+    .work-nav {
+      display: none; } }
+
+#project-banner {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff; }
+
+.wrapper-proj001 {
+  width: 80%;
+  margin: 5% auto; }
+
+.proj-intro img {
+  float: right;
+  width: 50%;
+  margin-left: 5%; }
+
+.h3-proj {
+  color: #243242;
+  font-family: "Futura";
+  font-size: 1.6em;
+  margin: 10% 0 2% 0; }
+
+.clearfix:after {
+  clear: both;
+  display: block;
+  content: ' '; }
+
+.h4-proj {
+  font-family: "Roboto Slab";
+  font-size: .9em;
+  margin: 0 0 2% 0;
+  padding: 0;
+  color: #243242;
+  width: 100%;
+  font-weight: 500; }
+
+hr {
+  margin-top: 50px; }
+
+.left-side {
+  float: left;
+  display: block;
+  width: 42%;
+  margin: 0; }
+  @media screen and (max-width: 647px) {
+    .left-side {
+      width: 100%; } }
+
+.right-side {
+  float: left;
+  display: block;
+  width: 42%;
+  margin: 0 0 0 16%; }
+  @media screen and (max-width: 647px) {
+    .right-side {
+      width: 100%;
+      margin: 0; } }
+
+.h3-proj-overview {
+  color: #243242;
+  font-family: "Futura";
+  font-size: 1.6em;
+  margin: 8% 0 2% 0; }
+
+.h4-proj-overview {
+  font-family: "Roboto Slab";
+  font-size: .8em;
+  margin: 0 0 2% 0;
+  padding: 0;
+  color: #243242;
+  font-weight: 400; }
+
+.ux img {
+  width: 100%;
+  height: auto; }
+
+.proj-mission {
+  margin: 0 0 50px 0; }
+
+.proj-process img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px; }
+
+.gif {
+  background-image: url("/assets/img/wrangle.gif");
+  background-size: cover;
+  width: 160px;
+  height: 350px;
+  margin: 50px auto; }

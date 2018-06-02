@@ -1,5 +1,9 @@
 // This is the single file output by sass. It is intended to ONLY @import other files.
 
+@font-face
+   font-family: 'Futura'
+   src: url("../font/Futura.ttc")
+
 
 // 1 - TOOLS
 @import '1-tools/normalize'
@@ -20,6 +24,13 @@
 
 
 // 4 - LAYOUT
+@import '4-layout/dailyui'
+@import '4-layout/bravo'
+@import '4-layout/yelpcamp'
+@import '4-layout/wrangle'
+@import '4-layout/contact'
+@import '4-layout/about'
+@import '4-layout/work'
 @import '4-layout/nav'
 
 
@@ -29,3 +40,4 @@
 
 // 6 - PAGES
 @import '6-pages/page-home'
+@import '6-pages/page-work'
